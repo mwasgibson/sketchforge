@@ -1,39 +1,41 @@
 # SketchForge
 
-Rough sketch → polished editable mockup + agent-ready Design Tree. Multi-role exports. Full local project persistence.
+Rough freehand sketch → polished editable mockup + **agent-ready Design Tree**. Multi-role design studio (developers, marketers, designers) with local IndexedDB persistence.
 
-## Status
-
-Phases 0–4 + **full project persistence** complete.
-
-## Persistence
-
-- **IndexedDB** stores complete projects (shapes, Design Tree, role, title)
-- **Auto-save** debounced (~800ms) after edits
-- **Projects** panel: new, open, duplicate, delete
-- Restores last project on reload
-- **⌘S** forces an immediate save
-- Theme still in localStorage; project data in IndexedDB
+**https://github.com/mwasgibson/sketchforge**
 
 ## Features
 
-- Drawing: pen, shapes, frames, components, undo/redo
-- **Generate** — heuristic polish (optional `VITE_GENERATE_URL`)
-- Design Tree + **Agent** JSON
-- **Export…** — code (React/HTML/Vue/Svelte), brief, tokens, PNG
-- Multi-project workspace
+- **Canvas** — pen, eraser, shapes, text, frames, pan/zoom, undo/redo
+- **Roles** — Developer / Marketer / Designer / General
+- **Generate** — heuristic polish (optional `VITE_GENERATE_URL` for AI)
+- **Design Tree** — structured JSON for any agent/LLM
+- **Export** — React+Tailwind, HTML/CSS, Vue, Svelte, tokens, brief, PNG, Agent JSON
+- **Projects** — multi-project IndexedDB, auto-save, ⌘S
 
-## Run
+## Quick start
 
 ```bash
+git clone https://github.com/mwasgibson/sketchforge.git
+cd sketchforge
 npm install
 npm run dev
 ```
 
 ## Shortcuts
 
-V P E R O L T F H · ⌘Z / ⌘⇧Z · Delete · ⌘S save · Scroll zoom
+| Key | Action |
+|-----|--------|
+| V P E R O L T F H | Tools |
+| ⌘Z / ⌘⇧Z | Undo / Redo |
+| Delete | Delete selected |
+| ⌘S | Save |
+| Scroll | Zoom |
+
+## Stack
+
+React 19 · TypeScript · Vite · Tailwind v4 · Konva · Zustand · idb
 
 ## Docs
 
-See `docs/` for product requirements, technical design, and implementation plan.
+See `docs/` for PRD, technical requirements, app flow, design brief, schema, and implementation plan.
