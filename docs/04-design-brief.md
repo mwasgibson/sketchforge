@@ -15,37 +15,37 @@
 ## 2. Mood & Personality
 
 - Calm, precise, modern.
-- Slightly industrial / Swiss-influenced for developers; warmer and more expressive accents for marketers; clean and typographic for designers.
+- Slightly industrial / Swiss-influenced for developers; warmer accents for marketers; clean and typographic for designers.
 - Overall tone: competent, trustworthy, creative.
 
 ## 3. Colour System
 
-- **Base**: Neutral dark or light theme (user preference, system default).
-- **Accent**: Single strong accent (electric blue) for primary actions.
-- **Role accents** (subtle): Developer cool blue, Marketer warm coral, Designer violet.
+- **Base**: Neutral dark or light theme (user preference).
+- **Accent**: Electric blue for primary actions.
+- **Role accents**: Developer cool blue, Marketer warm coral, Designer violet.
 - Semantic colours for success / warning / error.
-- All colours exposed as CSS variables / design tokens.
+- All colours exposed as CSS variables / design tokens (`src/index.css`).
 
 ## 4. Typography
 
-- UI: Inter or system UI font stack.
+- UI: Inter or system UI font stack, 13px base.
 - Canvas text: user-selectable with good defaults.
 
 ## 5. Layout Principles
 
 - Three-zone workspace: left tools, centre canvas, right layers/properties.
 - Top bar thin and persistent.
-- Responsive: side rails become drawers on narrow screens.
+- Responsive: side rails can become drawers on narrow screens (later).
 
 ## 6. Key UI Components
 
-- Role switcher, tool palette, frame library, Generate button, properties panel, layer list, export menu.
+- Role switcher, tool palette (glyphs), frame library, Generate button, properties panel, layer list, export menu, empty-state card, zoom chip.
 
 ## 7. Interaction Notes
 
 - Drawing feels immediate; selection follows modern design-tool conventions.
-- Keyboard shortcuts for tools and history.
+- Keyboard shortcuts: V select, P pen, R rect, T text, F frame, ⌘Z undo, Delete remove.
 
 ## 8. Accessibility
 
-- Minimum 4.5:1 contrast, focus rings, ARIA labels, reduced-motion support.
+- Minimum 4.5:1 contrast, focus rings, ARIA labels, reduced-motion support where applicable.
